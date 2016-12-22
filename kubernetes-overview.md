@@ -7,14 +7,14 @@
 `Kubernetes` 是一个 一切以 `Service` 为中心的系统, 一切围绕服务运转, `Kubernetes` 可以构建在物理机上, 也可以构建在 私有云, 公有云之上. `Kubernetes` 的最大亮点是自动化, 一个 `Kubernetes` 的 `Service` 可以自我扩展, 自动诊断, 自动扩展.
 
 
-## `Kubernetes` 和 `Docker`
+## Kubernetes 和 Docker
 
 通常我们认为 `Kubernetes` 只是 `Docker` 的上层架构, 其实并非完全正确. `Kubernetes` 以 `Docker` 为基础打造一个云计算时代的分布式系统架构.
 
 目前 `Kubernetes` 支持两种开源容器技术, 一个是 `Docker`, 另一个是 `CoreOS` 推出的 `Rocket`, 这是当年 `CoreOS` 和 `Docker` 分家所导致的, 有兴趣可以 `Google` 相关事件.
 
 
-## 为什么要使用 `Kubernetes`
+## 为什么要使用 Kubernetes
 
 很多时候我们可能需要设计一套分布式系统, 但是可能需要很多运维专家才能够完成, 使用 `Kubernetes` 之后, 只需要将系统中的各组件拆分成为多个 `Service`, 就能够实现自动扩展, 自动修复等高级功能.
 
@@ -23,7 +23,7 @@
 甚至于我们可以在负载过高时将应用无缝迁移到公有云以提升系统的吞吐量, 足以证明 `Kubernetes` 提供了超强的横向扩展能力。
 
 
-## `Kubernetes` `all in one` 安装
+## Kubernetes all in one 安装
 
 在 `CentOS 7` 中, `Kubernetes` 的安装非常的简单, 直接通过 `yum` 即可安装, `kubernetes` 只依赖 `docker` 和 `etcd` 这两个外部组件
 
@@ -43,7 +43,7 @@ NAME        STATUS    AGE
 ```
 
 
-## `Nginx` 部署
+## Nginx 部署
 
 ```
 $ kubectl run my-nginx --image=nginx --replicas=2 --port=80 #部署一个 nginx
