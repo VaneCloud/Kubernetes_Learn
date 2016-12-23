@@ -114,7 +114,7 @@ CONTAINER ID        IMAGE                                                       
 476b520c14c0        registry.access.redhat.com/rhel7/pod-infrastructure:latest   "/pod"                   13 minutes ago      Up 13 minutes                           k8s_POD.c36b0a77_my-nginx-3800858182-wcedc_default_ffbabb4e-c818-11e6-bc92-fa163efae568_3aad0673
 9f68e6cef738        registry.access.redhat.com/rhel7/pod-infrastructure:latest   "/pod"                   13 minutes ago      Up 13 minutes                           k8s_POD.c36b0a77_my-nginx-3800858182-5pyt5_default_ffbab391-c818-11e6-bc92-fa163efae568_307f6584
 
-$ docker docker rm -fv 3bd031919294 45f2a5c38d0d #删除容器
+$ docker rm -fv 3bd031919294 45f2a5c38d0d #删除容器
 
 $ kubectl get pods  #可以看到pod自动恢复了
 NAME                        READY     STATUS              RESTARTS   AGE
@@ -156,4 +156,4 @@ Commercial support is available at
 
 ## Next
 
-下一篇介绍 `Kubernetes` 各组件的作用.
+下一篇介绍 `Kubernetes` 概念、术语的介绍.
